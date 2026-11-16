@@ -20,6 +20,7 @@ const Team = () => {
           maxWidth: "1200px",
         }}
       >
+        {/* Committee Members */}
         {teamMembers.slice(0, 6).map((teamMember, index) => {
           const { name, position, image } = teamMember;
           return (
@@ -39,6 +40,7 @@ const Team = () => {
           maxWidth: "1200px",
         }}
       >
+        {/* Staff Advisors */}
         {teamMembers.slice(6, 10).map((teamMember, index) => {
           const { name, position, image } = teamMember;
           return (
