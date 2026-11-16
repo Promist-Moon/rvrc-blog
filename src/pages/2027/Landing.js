@@ -146,7 +146,7 @@ const Landing = () => {
             'Beyond Borders: Shaping Sustainable Futures Together'
           </Typography>
           <p style={{ fontSize: "16pt", color: COLOURS.black, textAlign: "justify" }}>
-            Beyond Borders: Forging Sustainable Futures Together marks a new chapter for the annual RVRC Symposium, evolving 
+            Beyond Borders: Shaping Sustainable Futures Together marks a new chapter for the annual RVRC Symposium, evolving 
             from a college platform into a regional stage for cross-institutional dialogue and collective action. 
             Grounded in RVRC's commitment to experiential learning and its established foundations in sustainability 
             and workplace readiness, the 2027 edition brings together students, educators, and industry experts from RVRC, 
