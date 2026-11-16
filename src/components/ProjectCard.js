@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Card, Divider, Stack, Typography } from "@mui/material";
+import { COLOURS } from "../constants/Colours";
 
 const ProjectCard = ({ title, subtitle, presenters, abstract }) => {
   const presentersString = presenters ? presenters.join(", "): "";
@@ -18,7 +19,7 @@ const ProjectCard = ({ title, subtitle, presenters, abstract }) => {
       >
         <Box
           sx={{
-            color: "#592693",
+            color: COLOURS.accentPurple,
             fontWeight: "bold",
             padding: "5px",
             marginX: "10px",

@@ -2,6 +2,7 @@ import React from "react";
 import { Typography, Stack } from "@mui/material";
 import Timeline from "@mui/lab/Timeline";
 
+import { COLOURS } from "../../constants/Colours";
 import TimelineEvent from "./TimelineEvent";
 
 const ProgrammeHighlights = ({ title, subtitle, events }) => {
@@ -13,7 +14,7 @@ const ProgrammeHighlights = ({ title, subtitle, events }) => {
             <Typography
               variant="h4"
               sx={{
-                color: "#1d9077",
+                color: COLOURS.accentGreen,
               }}
             >
               {title}
@@ -25,7 +26,7 @@ const ProgrammeHighlights = ({ title, subtitle, events }) => {
               variant="h6"
             sx={{
               fontWeight: "bold",
-              color: "#1d9077",
+              color: COLOURS.accentGreen,
             }}>
               {subtitle} 
               </Typography>
@@ -40,7 +41,7 @@ const ProgrammeHighlights = ({ title, subtitle, events }) => {
               titles={event.titles}
               locations={event.locations}
               icon={event.icon}
-              iconBackgroundColor={index % 2 === 0 ? "#20a9a9ff" : "#592693"}
+              iconBackgroundColor={index % 2 === 0 ? COLOURS.accentTeal : COLOURS.accentPurple}
             />
           ))}
         </Timeline>

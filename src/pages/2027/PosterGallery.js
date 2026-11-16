@@ -18,7 +18,10 @@ import {
   thread2Posters,
 } from "../../constants/2027/Posters";
 import { COLOURS } from "../../constants/Colours";
-import { ELEMENT_PADDING, TEXT_PADDING } from "../../constants/SIZES";
+import {
+  ELEMENT_PADDING,
+  TEXT_PADDING,
+} from "../../constants/SIZES";
 
 const PosterGallery = () => {
   return (
@@ -40,7 +43,7 @@ const PosterGallery = () => {
           style={{ transformOrigin: "center bottom"}}
         > 
           <Stack spacing={2}>
-            <Typography sx={{ fontSize: { md: "16pt" }, color: "white", textAlign: "justify" }}>
+            <Typography sx={{ fontSize: { md: "16pt" }, color: COLOURS.white, textAlign: "justify" }}>
               The Poster Gallery will showcase the breadth 
               of students' academic learning and student-led initiatives. Attendees will have the 
               opportunity to explore the exhibited projects at their own pace, engage with the 
@@ -56,7 +59,7 @@ const PosterGallery = () => {
                 Poster Gallery Abstract Booklet.
               </a>
             </Typography>
-            <Typography sx={{ fontSize: { md: "16pt" }, color: "white", textAlign: "justify" }}>
+            <Typography sx={{ fontSize: { md: "16pt" }, color: COLOURS.white, textAlign: "justify" }}>
               Alongside the Poster Gallery, Interactive Booths hosted by community partners 
               will provide attendees with the opportunity to learn about their respective work 
               in advancing environmental conservation, social inclusion, and youth advocacy. 
@@ -85,7 +88,7 @@ const PosterGallery = () => {
             <Typography variant="h4" sx={{ fontWeight: "bold", color: COLOURS.brandPurple, textAlign: "center" }}>
               Interactive Display Posters
             </Typography>
-            <Typography sx={{ fontSize: { md: "16pt" }, padding: { md: TEXT_PADDING }, color: "black", textAlign: "center" }}>
+            <Typography sx={{ fontSize: { md: "16pt" }, padding: { md: TEXT_PADDING }, color: COLOURS.black, textAlign: "center" }}>
               Interactive Display Posters use ClassIn screens to share their projects through interactive 
               activities, mini-games, and videos. Some presentations feature peer-teaching projects 
               or collaborations with external stakeholders, giving visitors an engaging way to learn 
@@ -109,7 +112,7 @@ const PosterGallery = () => {
             <Typography variant="h4" sx={{ fontWeight: "bold", color: COLOURS.brandPurple, textAlign: "center" }}>
               Posters (Print Display)
             </Typography>
-            <Typography sx={{ fontSize: { md: "16pt" }, padding: { md: TEXT_PADDING }, color: "black", textAlign: "center" }}>
+            <Typography sx={{ fontSize: { md: "16pt" }, padding: { md: TEXT_PADDING }, color: COLOURS.black, textAlign: "center" }}>
               Posters (Print Display) are printed posters showcasing student projects from research, 
               coursework, and industry collaborations, as well as initiatives from interest groups 
               within RVRC. They will be displayed across the Atrium.

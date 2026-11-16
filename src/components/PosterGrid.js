@@ -18,7 +18,7 @@ const PosterGrid = ({ posters }) => (
                     }}
                 >
                     <CardContent>
-                        <Typography sx={{ fontWeight: "bold", fontSize: "1.2rem", color: COLOURS.brandPurple, mb: 1 }}>
+                        <Typography sx={{ fontWeight: "bold", fontSize: "1.2rem", color: COLOURS.accentPurple, mb: 1 }}>
                         {poster.title}
                         </Typography>
                         <Typography color="text.secondary">

@@ -13,7 +13,7 @@ const WorkshopCard = ({ partner, title, description, image }) => (
       "&:hover": {
         transform: "translateY(-6px)",
         boxShadow: "0px 12px 24px rgba(0,0,0,0.12)",
-        backgroundColor: "#f4f9f8",
+        backgroundColor: COLOURS.hoverGreen,
       },
     }}
   >
@@ -33,7 +33,7 @@ const WorkshopCard = ({ partner, title, description, image }) => (
       >
         {title}
       </Typography>
-      <Typography sx={{ fontSize: { xs: "10pt", md: "12pt", lg: "14pt" }, fontFamily: "Jost" }}>
+      <Typography sx={{ fontSize: { xs: "10pt", md: "12pt", lg: "14pt" }, fontFamily: "Jost", textAlign: "justify" }}>
         {description}
       </Typography>
     </CardContent>

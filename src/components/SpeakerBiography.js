@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
+import { COLOURS } from "../constants/Colours";
 
 const SpeakerBiography = ({ name, title, biography, image, isAlignedLeft }) => {
   return (
@@ -17,7 +18,7 @@ const SpeakerBiography = ({ name, title, biography, image, isAlignedLeft }) => {
           "&:hover": {
             transform: "translateY(-6px)",
             boxShadow: "0px 12px 24px rgba(0,0,0,0.12)",
-            backgroundColor: "#f4f9f8",
+            backgroundColor: COLOURS.hoverGreen,
           },
         }}
       >
@@ -57,7 +58,7 @@ const SpeakerBiography = ({ name, title, biography, image, isAlignedLeft }) => {
             sx={{
               fontSize: { xs: "18pt", md: "20pt", lg: "22pt" },
               fontFamily: "Jost",
-              color: "#1d9077",
+              color: COLOURS.accentGreen,
             }}
           >
             {name}

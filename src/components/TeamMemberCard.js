@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Stack, Typography } from "@mui/material";
+import { COLOURS } from "../constants/Colours";
 
 const TeamMemberCard = ({ image, name, position }) => {
   return (
@@ -25,7 +26,7 @@ const TeamMemberCard = ({ image, name, position }) => {
       <Typography
         sx={{
           fontSize: "16pt",
-          color: "#592693",
+          color: COLOURS.accentPurple,
           fontWeight: "bold",
         }}
       >

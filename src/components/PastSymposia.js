@@ -52,7 +52,7 @@ const defaultLinks = [
 const PastSymposia = ({ links = defaultLinks }) => {
   return (
     <>
-      <Stack spacing={3} py="32px" px="10%" sx={{ backgroundColor: "#e1d0f5" }}>
+      <Stack spacing={3} py="32px" px="10%" sx={{ backgroundColor: COLOURS.lightPurple }}>
         <Typography
           variant="h1"
           sx={{
@@ -86,7 +86,7 @@ const PastSymposia = ({ links = defaultLinks }) => {
                 backgroundColor: "transparent",
                 color: COLOURS.brandPurple,
                 borderRadius: "16px",
-                border: "1px solid #592693",
+                border: `1px solid ${COLOURS.brandPurple}`,
                 ":hover": {
                   backgroundColor: COLOURS.brandPurple,
                   color: COLOURS.white,
