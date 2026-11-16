@@ -12,9 +12,9 @@ import {
 } from "@mui/material";
 import { Link, Outlet } from "react-router-dom";
 
-import menuIcon from "../../assets/bars-solid.svg";
-import logoIconWhite from "../../assets/logo_icon_white.png";
-import AccordionMenuItem from "./AccordionMenuItem";
+import menuIcon from "../../../assets/bars-solid.svg";
+import logoIconWhite from "../../../assets/logo_icon_white.png";
+import AccordionMenuItem from "../../header/AccordionMenuItem";
 
 const Header = ({ headerLinks }) => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);

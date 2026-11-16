@@ -1,15 +1,15 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
-import SpeakerBiography from "../../SpeakerBiography";
+import SpeakerBiography from "../../../SpeakerBiography";
 
-import Qiherng from "../../../assets/2024/thread-speakers/kong-qi-herng.webp";
-import Wanqing from "../../../assets/2024/thread-speakers/yeoh-wan-qing.webp";
-import Vania from "../../../assets/2024/thread-speakers/xu-vania.webp";
-import Wanting from "../../../assets/2024/thread-speakers/chan-wan-ting.webp";
-import Pranav from "../../../assets/2024/thread-speakers/pranav-kalra.webp";
-import Amira from "../../../assets/2024/thread-speakers/amira-rafi.webp";
+import Qiherng from "../../../../assets/2024/thread-speakers/kong-qi-herng.webp";
+import Wanqing from "../../../../assets/2024/thread-speakers/yeoh-wan-qing.webp";
+import Vania from "../../../../assets/2024/thread-speakers/xu-vania.webp";
+import Wanting from "../../../../assets/2024/thread-speakers/chan-wan-ting.webp";
+import Pranav from "../../../../assets/2024/thread-speakers/pranav-kalra.webp";
+import Amira from "../../../../assets/2024/thread-speakers/amira-rafi.webp";
 
-import Thread3Image from "../../../assets/2024/thread-3.webp";
+import Thread3Image from "../../../../assets/2024/thread-3.webp";
 
 const thread3Panel1Speakers = [
   {

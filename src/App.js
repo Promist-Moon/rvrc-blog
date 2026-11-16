@@ -4,8 +4,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 
 import AboutRVRC from "./pages/AboutRVRC";
-import Header from "./components/header/Header";
-import Header2027 from "./components/2027/HeaderLeft";
+import LegacyHeader from "./components/legacy/shared/Header";
+import Header from "./components/Header";
 
 import Landing2022 from "./pages/2022/Landing";
 import KeynoteSpeaker2022 from "./pages/2022/KeynoteSpeaker";
@@ -60,7 +60,7 @@ function App() {
           <Routes>
             <Route path="about" element={<AboutRVRC />} />
 
-            <Route path="/" element={<Header2027 headerLinks={headerLinks2027} />}>
+            <Route path="/" element={<Header headerLinks={headerLinks2027} />}>
               <Route index element={<Landing2027 />} />
               <Route path="team" element={<Team2027 />} />
               <Route path="partners-delegates" element={<PartnersDelegates2027 />} />
@@ -70,7 +70,7 @@ function App() {
               <Route path="dialogue" element={<Dialogue2027 />} />
             </Route>
 
-            <Route path="2026" element={<Header headerLinks={headerLinks2026} />}>
+            <Route path="2026" element={<LegacyHeader headerLinks={headerLinks2026} />}>
               <Route index element={<Landing2026 />} />
               <Route path="team" element={<Team2026 />} />
               <Route path="keynote" element={<KeynoteSpeaker2026 />} />
@@ -79,7 +79,7 @@ function App() {
               <Route path="poster-gallery" element={<PosterGallery2026 />} />
             </Route>
 
-            <Route path="2025" element={<Header headerLinks={headerLinks2025} />}>
+            <Route path="2025" element={<LegacyHeader headerLinks={headerLinks2025} />}>
               <Route index element={<Landing2025 />} />
               <Route path="team" element={<Team2025 />} />
               <Route path="keynote" element={<KeynoteSpeaker2025 />} />
@@ -90,7 +90,7 @@ function App() {
 
             <Route
               path="2024"
-              element={<Header headerLinks={headerLinks2024} />}
+              element={<LegacyHeader headerLinks={headerLinks2024} />}
             >
               <Route index element={<Landing2024 />} />
               <Route path="keynote" element={<KeynoteSpeaker2024 />} />
@@ -104,7 +104,7 @@ function App() {
 
             <Route
               path="2022"
-              element={<Header headerLinks={headerLinks2022} />}
+              element={<LegacyHeader headerLinks={headerLinks2022} />}
             >
               <Route index element={<Landing2022 />} />
               <Route path="keynote" element={<KeynoteSpeaker2022 />} />

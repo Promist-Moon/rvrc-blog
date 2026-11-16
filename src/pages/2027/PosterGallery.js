@@ -4,13 +4,13 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
-import Footer from "../../components/2027/Footer";
-import Title from "../../components/2027/Title";
+import Footer from "../../components/Footer";
+import Title from "../../components/Title";
 // import PosterGalleryImage from "../../assets/2027/poster-gallery.webp";
 import ProgrammeHighlights from "../../components/highlights/ProgrammeHighlights";
 import { posterGalleryEvents } from "../../constants/2027/ProgrammeEvents";
 import { interactiveDisplayEvents } from "../../constants/2027/ProgrammeEvents";
-import PosterGrid from "../../components/2027/PosterGrid";
+import PosterGrid from "../../components/PosterGrid";
 import {
   thread1InteractivePosters,
   thread1Posters,

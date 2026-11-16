@@ -1,8 +1,8 @@
 import React from "react";
 import { Grid, Grow, Stack, Typography } from "@mui/material";
 
-import Title from "../../components/2027/Title";
-import Footer from "../../components/2027/Footer";
+import Title from "../../components/Title";
+import Footer from "../../components/Footer";
 // import Thread2Image from "../../assets/2026/thread-2.webp";
 import SpeakerBiography from "../../components/SpeakerBiography";
 import { communityPartners, partnerInstitutions } from "../../constants/2027/PartnersDelegates";

@@ -1,8 +1,8 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 
-import AwardCard from "../../components/2024/AwardCard";
-import Title from "../../components/Title";
+import AwardCard from "../../components/legacy/2024/AwardCard";
+import Title from "../../components/legacy/shared/Title";
 
 const popularChoiceAwardWinners = [
   {

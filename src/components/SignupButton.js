@@ -1,24 +1,27 @@
 import React from "react";
 import { Button } from "@mui/material";
+import { COLOURS } from "../constants/Colours";
 
-const SignupButton = ({ link }) => {
+const SignupButton = ({ link, label = "Register Here!" }) => {
   return (
     <Button
       variant="contained"
       href={link}
       target="_blank"
       sx={{
+        alignSelf: "center",
         textTransform: "none",
         fontSize: "16pt",
-        backgroundColor: "#592693",
+        backgroundColor: COLOURS.brandPurple,
         borderRadius: "16px",
-        color: "white",
+        color: COLOURS.white,
+        whiteSpace: "nowrap",
         ":hover": {
           backgroundColor: "#3e1b67",
         },
       }}
     >
-      Register Now!
+      {label}
     </Button>
   );
 };

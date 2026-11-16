@@ -2,9 +2,9 @@ import React from "react";
 import { Box, Grow, Stack, Typography } from "@mui/material";
 
 import RVRCStepper from "../../components/SwipeableTextMobileStepper";
-// import SignupButton from "../../components/SignupButton";
+// import SignupButton from "../../components/legacy/shared/SignupButton";
 import ProgrammeHighlights from "../../components/highlights/ProgrammeHighlights";
-import PastSymposia from "../../components/PastSymposia";
+import PastSymposia from "../../components/legacy/shared/PastSymposia";
 import { programmeEvents } from "../../constants/2025/ProgrammeEvents";
 
 import LandingBanner1 from "../../assets/2025/landing-banner-1.webp";
@@ -12,7 +12,7 @@ import LandingBanner2 from "../../assets/2025/landing-banner-2.webp";
 import LandingBanner3 from "../../assets/2025/landing-banner-3.webp";
 import LandingBanner4 from "../../assets/2025/landing-banner-4.webp";
 import LandingBanner5 from "../../assets/2025/landing-banner-5.webp";
-import Footer from "../../components/Footer";
+import Footer from "../../components/legacy/shared/Footer";
 
 const images = [
   {

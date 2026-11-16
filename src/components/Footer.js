@@ -1,11 +1,13 @@
 import React from "react";
 import { Box, Stack, Typography } from "@mui/material";
 import { EmailOutlined, PhoneOutlined } from "@mui/icons-material";
+import { COLOURS } from "../constants/Colours";
+import defaultLogo from "../assets/logo-2027.png";
 
-const Footer = () => {
+const Footer = ({ title = "RVRC Symposium 2027", logo = defaultLogo }) => {
   return (
     <>
-      <Box py="32px" px="10%" sx={{ background: "#592693", color: "white" }}>
+      <Box py="28px" px="10%" sx={{ background: COLOURS.brandPurple, color: "white" }}>
         <Stack
           direction={{ xs: "column", md: "row" }}
           spacing={{ xs: 3, md: 0 }}
@@ -14,29 +16,59 @@ const Footer = () => {
             justifyContent: { xs: "none", md: "space-evenly" },
           }}
         >
-          <Typography
-            variant="h1"
+          {/* Logo and Title Stack */}
+          <Stack
+            direction={{ xs: "column", md: "row" }}
+            spacing={{ xs: 2, md: 3 }}
             sx={{
-              textAlign: "left",
-              color: "white",
-              fontSize: "24pt",
-              fontWeight: "Bold",
-              maxWidth: { xs: "none", md: "200px" },
+              alignItems: { xs: "center", md: "flex-start" },
+              justifyContent: { xs: "none", md: "space-evenly" },
             }}
           >
-            RVRC Symposium 2026
-          </Typography>
+            <img
+              src={logo}
+              alt="logo"
+              style={{
+                height: "120px",
+                padding: "0px",
+                marginTop: "0px"
+              }}
+            />
+            <Typography
+              variant="h1"
+              sx={{
+                mt: { xs: 0, md: 0 },
+                textAlign: "left",
+                color: "white",
+                fontSize: "24pt",
+                fontWeight: "Bold",
+                maxWidth: { xs: "none", md: "200px" },
+              }}
+            >
+              {title}
+            </Typography>
+          </Stack>
 
-          <Stack sx={{ alignItems: { xs: "center", md: "flex-start" } }}>
-            <Typography mb="10px" sx={{ fontWeight: "bold" }}>
+          <Stack
+            sx={{
+              mt: { xs: 0, md: 0 },
+              alignItems: { xs: "center", md: "flex-start" },
+            }}
+          >
+            <Typography mb="10px" sx={{ fontWeight: "bold", fontSize: "16pt" }}>
               Address
             </Typography>
             <Typography>25 Lower Kent Ridge Road</Typography>
             <Typography>Block G, Level 3</Typography>
             <Typography>Singapore 119081</Typography>
           </Stack>
-          <Stack sx={{ alignItems: { xs: "center", md: "flex-start" } }}>
-            <Typography mb="10px" sx={{ fontWeight: "bold" }}>
+          <Stack
+            sx={{
+              mt: { xs: 0, md: 0 },
+              alignItems: { xs: "center", md: "flex-start" },
+            }}
+          >
+            <Typography mb="10px" sx={{ fontWeight: "bold", fontSize: "16pt" }}>
               Contact Us
             </Typography>
             <Stack direction="row" spacing={3}>

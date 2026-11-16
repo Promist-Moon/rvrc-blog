@@ -4,8 +4,9 @@ import {
   Grid,
   Typography,
 } from "@mui/material";
+import { COLOURS } from "../constants/Colours";
 
-const PosterGrid = ({posters}) => (
+const PosterGrid = ({ posters }) => (
     <Grid container spacing={2} sx={{ mx: "auto", mt: 1, width: "90%" }}>
         {posters.map((poster) => (
             <Grid item xs={12} sm={6} key={poster.title}>
@@ -17,7 +18,7 @@ const PosterGrid = ({posters}) => (
                     }}
                 >
                     <CardContent>
-                        <Typography sx={{ fontWeight: "bold", fontSize: "1.2rem", color: "#592693", mb: 1 }}>
+                        <Typography sx={{ fontWeight: "bold", fontSize: "1.2rem", color: COLOURS.brandPurple, mb: 1 }}>
                         {poster.title}
                         </Typography>
                         <Typography color="text.secondary">

@@ -1,8 +1,8 @@
 import React from "react";
 import { Box, Stack, Typography } from "@mui/material";
-import ProjectCard from "../../ProjectCard";
+import ProjectCard from "../../../ProjectCard";
 
-import Thread1Image from "../../../assets/2024/thread-1.webp";
+import Thread1Image from "../../../../assets/2024/thread-1.webp";
 
 const projectGaiaProjects = [
   {

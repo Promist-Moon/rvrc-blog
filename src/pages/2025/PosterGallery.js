@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Stack, Typography } from "@mui/material";
-import Footer from "../../components/Footer";
-import Title from "../../components/Title";
+import Footer from "../../components/legacy/shared/Footer";
+import Title from "../../components/legacy/shared/Title";
 import PosterGalleryImage from "../../assets/2025/poster-gallery.webp";
 import ProgrammeHighlights from "../../components/highlights/ProgrammeHighlights";
 import ProjectCard from "../../components/ProjectCard";

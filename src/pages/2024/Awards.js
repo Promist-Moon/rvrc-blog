@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 
-import AwardCard from "../../components/2024/AwardCard";
+import AwardCard from "../../components/legacy/2024/AwardCard";
 
 const popularChoiceAwardWinners = [
   {

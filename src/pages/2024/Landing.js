@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import { Box, Typography } from "@mui/material";
 
 import RVRCStepper from "../../components/SwipeableTextMobileStepper";
-import SymposiumTheme from "../../components/2024/landing/SymposiumTheme";
+import SymposiumTheme from "../../components/legacy/2024/landing/SymposiumTheme";
 import ProgrammeHighlights from "../../components/highlights/ProgrammeHighlights";
-import StudentPoints from "../../components/2024/landing/StudentPoints";
+import StudentPoints from "../../components/legacy/2024/landing/StudentPoints";
 
 import LandingBanner1 from "../../assets/2024/landing-banner-1.webp";
 import LandingBanner2 from "../../assets/2024/landing-banner-2.webp";

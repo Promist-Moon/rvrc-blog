@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 
-import LandingThemeBanner from "../../../assets/2024/landing-theme-banner.webp";
+import LandingThemeBanner from "../../../../assets/2024/landing-theme-banner.webp";
 
 const SymposiumTheme = () => {
   return (

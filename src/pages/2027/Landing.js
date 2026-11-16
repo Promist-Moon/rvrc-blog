@@ -2,9 +2,9 @@ import React from "react";
 import { Box, Grow, Stack, Typography } from "@mui/material";
 
 import RVRCStepper from "../../components/SwipeableTextMobileStepper";
-import SignupButton from "../../components/2027/SignupButton";
+import SignupButton from "../../components/SignupButton";
 import ProgrammeHighlights from "../../components/highlights/ProgrammeHighlights";
-import PastSymposia from "../../components/2027/PastSymposia";
+import PastSymposia from "../../components/PastSymposia";
 import { programmeEvents } from "../../constants/2027/ProgrammeEvents";
 import { COLOURS } from "../../constants/Colours";
 
@@ -12,7 +12,7 @@ import LandingBanner1 from "../../assets/2027/landing-banner-1.webp";
 import LandingBanner2 from "../../assets/2027/landing-banner-2.webp";
 import LandingBanner3 from "../../assets/2027/landing-banner-3.webp";
 import LandingBanner4 from "../../assets/2027/landing-banner-4.webp";
-import Footer from "../../components/2027/Footer";
+import Footer from "../../components/Footer";
 
 import Anne from "../../assets/2027/anne.webp";
 import Rector from "../../assets/2027/rector.webp";

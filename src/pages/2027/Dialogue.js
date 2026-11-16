@@ -1,8 +1,8 @@
 import React from "react";
 import { Box, Stack, Grow, Typography, Grid } from "@mui/material";
 
-import Title from "../../components/2027/Title";
-import Footer from "../../components/2027/Footer";
+import Title from "../../components/Title";
+import Footer from "../../components/Footer";
 import { COLOURS } from "../../constants/Colours";
 import { ELEMENT_PADDING } from "../../constants/SIZES";
 

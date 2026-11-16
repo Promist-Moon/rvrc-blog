@@ -1,9 +1,9 @@
 import React from "react";
 import { Grid, Stack } from "@mui/material";
 
-import Title from "../../components/2027/Title";
+import Title from "../../components/Title";
 import TeamMemberCard from "../../components/TeamMemberCard";
-import Footer from "../../components/2027/Footer";
+import Footer from "../../components/Footer";
 import teamMembers from "../../constants/2027/TeamMembers";
 
 const Team = () => {

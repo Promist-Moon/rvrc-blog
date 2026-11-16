@@ -14,12 +14,12 @@ import {
 import { ExpandMore } from "@mui/icons-material";
 import { Link, Outlet } from "react-router-dom";
 
-import menuIcon from "../../assets/bars-solid.svg";
-import logoIcon from "../../assets/logo-2027.png";
-import { COLOURS } from "../../constants/Colours";
-import AccordionMenuItem from "../header/AccordionMenuItem";
+import menuIcon from "../assets/bars-solid.svg";
+import defaultLogo from "../assets/logo-2027.png";
+import { COLOURS } from "../constants/Colours";
+import AccordionMenuItem from "./header/AccordionMenuItem";
 
-const Header = ({ headerLinks }) => {
+const Header = ({ headerLinks = [], logo = defaultLogo, logoLink = "/" }) => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElDesktopSubNav, setAnchorElDesktopSubNav] = React.useState(null);
   const [desktopSubLinks, setDesktopSubLinks] = React.useState([]);
@@ -59,9 +59,9 @@ const Header = ({ headerLinks }) => {
                 justifyContent: "space-between",
               }}
             >
-              <a href="/">
+              <a href={logoLink}>
                 <img
-                  src={logoIcon}
+                  src={logo}
                   alt="logo"
                   style={{ height: "120px", padding: "0px" }}
                 />
@@ -144,9 +144,9 @@ const Header = ({ headerLinks }) => {
                 gap: 3,
               }}
             >
-              <a href="/">
+              <a href={logoLink}>
                 <img
-                  src={logoIcon}
+                  src={logo}
                   alt="logo"
                   style={{
                     height: "100px",

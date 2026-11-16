@@ -1,6 +1,5 @@
 import React from "react";
 import { Button } from "@mui/material";
-import { COLOURS } from "../../constants/Colours";
 
 const SignupButton = ({ link }) => {
   return (
@@ -9,19 +8,17 @@ const SignupButton = ({ link }) => {
       href={link}
       target="_blank"
       sx={{
-        alignSelf: "center",
         textTransform: "none",
         fontSize: "16pt",
-        backgroundColor: COLOURS.brandPurple,
+        backgroundColor: "#592693",
         borderRadius: "16px",
-        color: COLOURS.white,
-        whiteSpace: "nowrap",
+        color: "white",
         ":hover": {
           backgroundColor: "#3e1b67",
         },
       }}
     >
-      Register Here!
+      Register Now!
     </Button>
   );
 };

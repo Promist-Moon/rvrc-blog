@@ -62,18 +62,7 @@ const PastSymposia = () => {
           Past Symposia
         </Typography>
 
-        <Stack
-          sx={{
-            display: "grid",
-            gridTemplateColumns: {
-              xs: "minmax(0, 250px)",
-              sm: "repeat(2, minmax(0, 250px))",
-              md: "repeat(3, minmax(0, 250px))",
-            },
-            gap: 2,
-            justifyContent: "center",
-          }}
-        >
+        <Stack spacing={2} sx={{ alignItems: "center" }}>
           {links.map((item, i) => (
             <Button
               key={i}
@@ -81,7 +70,7 @@ const PastSymposia = () => {
               variant="contained"
               onClick={() => window.open(item.href, "_blank")}
               sx={{
-                width: "100%",
+                width: "250px",
                 backgroundColor: "transparent",
                 color: "#592693",
                 borderRadius: "16px",

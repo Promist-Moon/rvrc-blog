@@ -1,8 +1,8 @@
 import React from "react";
 import { Grow, Stack, Typography } from "@mui/material";
 
-import Title from "../../components/Title";
-import Footer from "../../components/Footer";
+import Title from "../../components/legacy/shared/Title";
+import Footer from "../../components/legacy/shared/Footer";
 // import Thread2Image from "../../assets/2026/thread-2.webp";
 import ProgrammeHighlights from "../../components/highlights/ProgrammeHighlights";
 import SpeakerBiography from "../../components/SpeakerBiography";

@@ -1,7 +1,8 @@
 import React from "react";
 import { Button, Stack, Typography } from "@mui/material";
+import { COLOURS } from "../constants/Colours";
 
-const links = [
+const defaultLinks = [
   // {
   //   title: 'AY 2015/16',
   //   href: 'http://blog.nus.edu.sg/gem1917/',
@@ -48,7 +49,7 @@ const links = [
   }
 ];
 
-const PastSymposia = () => {
+const PastSymposia = ({ links = defaultLinks }) => {
   return (
     <>
       <Stack spacing={3} py="32px" px="10%" sx={{ backgroundColor: "#e1d0f5" }}>
@@ -56,13 +57,24 @@ const PastSymposia = () => {
           variant="h1"
           sx={{
             fontSize: { xs: "20pt", md: "26pt" },
-            color: "#592693",
+            color: COLOURS.brandPurple,
           }}
         >
           Past Symposia
         </Typography>
 
-        <Stack spacing={2} sx={{ alignItems: "center" }}>
+        <Stack
+          sx={{
+            display: "grid",
+            gridTemplateColumns: {
+              xs: "minmax(0, 250px)",
+              sm: "repeat(2, minmax(0, 250px))",
+              md: "repeat(3, minmax(0, 250px))",
+            },
+            gap: 2,
+            justifyContent: "center",
+          }}
+        >
           {links.map((item, i) => (
             <Button
               key={i}
@@ -70,14 +82,14 @@ const PastSymposia = () => {
               variant="contained"
               onClick={() => window.open(item.href, "_blank")}
               sx={{
-                width: "250px",
+                width: "100%",
                 backgroundColor: "transparent",
-                color: "#592693",
+                color: COLOURS.brandPurple,
                 borderRadius: "16px",
                 border: "1px solid #592693",
                 ":hover": {
-                  backgroundColor: "#592693",
-                  color: "white",
+                  backgroundColor: COLOURS.brandPurple,
+                  color: COLOURS.white,
                 },
               }}
             >

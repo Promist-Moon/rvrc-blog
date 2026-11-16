@@ -1,9 +1,9 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 
-import Thread2 from "../../components/2024/thematic-threads/Thread2";
-import Thread3 from "../../components/2024/thematic-threads/Thread3";
-import Thread1 from "../../components/2024/thematic-threads/Thread1";
+import Thread2 from "../../components/legacy/2024/thematic-threads/Thread2";
+import Thread3 from "../../components/legacy/2024/thematic-threads/Thread3";
+import Thread1 from "../../components/legacy/2024/thematic-threads/Thread1";
 
 const ThematicThreads = () => {
   return (

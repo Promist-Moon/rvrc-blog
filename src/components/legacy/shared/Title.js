@@ -1,12 +1,10 @@
 import React from "react";
 import { Box, Fade, Typography } from "@mui/material";
 
-import { COLOURS } from "../../constants/Colours";
-
 const Title = ({ title }) => (
   <Box
     sx={{
-      background: COLOURS.brandPurple,
+      background: "#592693",
       padding: "24px",
     }}
   >
@@ -14,7 +12,7 @@ const Title = ({ title }) => (
       <Typography
         variant="h1"
         sx={{
-          color: COLOURS.white,
+          color: "white",
           fontSize: { xs: "26pt", md: "40pt" },
           fontFamily: "Jost",
           fontWeight: "Bold",

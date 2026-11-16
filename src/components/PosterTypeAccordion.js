@@ -7,7 +7,7 @@ import {
   Typography,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import ProjectCard from "../ProjectCard";
+import ProjectCard from "./ProjectCard";
 
 const PosterTypeAccordion = ({ id, title, projects, expanded, onChange }) => (
   <Accordion

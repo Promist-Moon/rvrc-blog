@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import { Box, Typography } from "@mui/material";
 
 import RVRCStepper from "../../components/SwipeableTextMobileStepper";
-import SymposiumTheme from "../../components/2022/landing/SymposiumTheme";
+import SymposiumTheme from "../../components/legacy/2022/landing/SymposiumTheme";
 import ProgrammeHighlights from "../../components/highlights/ProgrammeHighlights";
-import AwardWinners from "../../components/2022/landing/AwardWinners";
-import StudentPoints from "../../components/2022/landing/StudentPoints";
+import AwardWinners from "../../components/legacy/2022/landing/AwardWinners";
+import StudentPoints from "../../components/legacy/2022/landing/StudentPoints";
 
 import event2 from "../../assets/2022/event2.webp";
 import event3 from "../../assets/2022/event3.webp";
